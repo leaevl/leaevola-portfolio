@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Evola | Photographe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap');
+        
+        :root {
+            --bg: #111111;
+            --text: #ffffff;
+            --accent: #E52A2A;
+            --gray: #aaaaaa;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 4rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #222;
+        }
+        
+        header a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+        
+        header a:hover {
+            color: var(--accent);
+        }
+        
+        .main-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 4rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            flex: 1;
+        }
+        
+        .intro-content {
+            flex: 1;
+        }
+        
+        h1 {
+            font-weight: 800;
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        
+        h1 span {
+            color: var(--accent);
+        }
+        
+        .intro-text {
+            font-size: 1.15rem;
+            color: var(--gray);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-photo-container {
+            flex-shrink: 0;
+        }
+        
+        .profile-photo-container img {
+            width: 250px;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        footer {
+            width: 100%;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--gray);
+            border-top: 1px solid #222;
+        }
+        
+        footer a {
+            color: var(--gray);
+            text-decoration: underline;
+            font-size: 0.75rem;
+            transition: color 0.3s;
+        }
+        
+        footer a:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 850px) {
+            header {
+                padding: 1.5rem;
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            header nav {
+                display: flex;
+                gap: 2rem;
+            }
+            header nav a {
+                margin: 0;
+            }
+            .main-container {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 2rem 1.5rem;
+                gap: 2rem;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .profile-photo-container img {
+                width: 200px;
+                height: 265px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header role="banner">
+        <a href="index.html" style="display: flex; align-items: center;">
+            <img src="https://static.wixstatic.com/media/48c853_f5c793328cfc4c2fa2fa50fe7d4bcba4~mv2.png" alt="Lea Evola Logo" style="height: 50px; object-fit: contain;">
+        </a>
+        <nav aria-label="Menu principal">
+            <a href="index.html" style="color: var(--accent);">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="intro-content">
+            <h1>LEA <span>EVOLA</span></h1>
+            <p class="intro-text">
+                Diplômée d'un Bachelor Photographie & image animée (École de Condé Lyon), je suis basée en région Auvergne-Rhône-Alpes. Forte de mes expériences en photographie de studio e-commerce et de mes reportages (événementiels culturels comme le Lyon Whisky Festival, mais aussi industriels et corporate), je mets mon exigence technique au service de visuels professionnels de haute qualité.
+            </p>
+        </div>
+        <div class="profile-photo-container">
+            <img src="https://static.wixstatic.com/media/48c853_3137600350ef4443af6cc7ff4b3d03c6~mv2.jpg" alt="Portrait en noir et blanc de Lea Evola, photographe">
+        </div>
+    </main>
+
+    <footer>
+        <div style="margin-bottom: 0.5rem;">© 2026 LEA EVOLA — Photographe</div>
+        <div><a href="legales.html">Mentions légales & Politique de confidentialité</a></div>
+    </footer>
+
+</body>
+</html>
