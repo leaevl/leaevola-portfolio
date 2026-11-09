@@ -147,6 +147,10 @@
                 height: 265px;
             }
         }
+.portfolio-section { max-width: 1200px; margin: 0 auto 6rem auto; padding: 0 2rem; width: 100%; }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; width: 100%; }
+        .portfolio-grid img { width: 100%; height: 350px; object-fit: cover; border-radius: 4px; transition: transform 0.3s ease; }
+        .portfolio-grid img:hover { transform: scale(1.02); }
     </style>
 </head>
 <body>
@@ -177,6 +181,7 @@
             <img src="photo1.jpg" alt="Photographie packshot studio">
             <img src="photo2.jpg" alt="Photographie joaillerie">
             <img src="photo3.jpg" alt="Reportage événementiel">
+            <img src="photo4.jpg" alt="Photographie 4">
         </div>
     </section>
     <footer>
